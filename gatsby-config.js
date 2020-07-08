@@ -44,5 +44,11 @@ module.exports = {
         basePath: `/notes`,
       },
     },
+    {
+      resolve: `gatsby-theme-blog-tags`,
+      options: {
+        basePath: `/tags`,
+      },
+    },
   ],
 }
