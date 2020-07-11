@@ -14,7 +14,13 @@
 
 https://github.com/gatsbyjs/gatsby-starter-blog-theme-core
 
+follow the tutorial
+https://www.gatsbyjs.org/tutorial/using-multiple-themes-together
+
 20200706 finished this tutorial
+
+to custom theme ui
+see https://theme-ui.com/customize
 
 ---
 

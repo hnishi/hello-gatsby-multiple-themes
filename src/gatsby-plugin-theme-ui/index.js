@@ -8,10 +8,15 @@ export default merge(defaultTheme, {
     primary: "mediumvioletred",
     modes: {
       dark: {
-        background: "indigo",
+        background: "black",
         text: "ghostwhite",
         primary: "gold",
       },
     },
+  },
+  fonts: {
+    body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: 'Inter, sans-serif',
+    monospace: 'Menlo, monospace',
   },
 })
