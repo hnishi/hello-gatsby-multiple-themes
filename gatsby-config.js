@@ -18,6 +18,10 @@ module.exports = {
         name: `Notes`,
         url: `/notes`,
       },
+      {
+        name: `Tags`,
+        url: `/tags`,
+      },
     ],
     social: [
       {
