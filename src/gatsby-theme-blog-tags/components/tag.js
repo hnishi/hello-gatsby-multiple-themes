@@ -1,15 +1,22 @@
 import React from 'react'
-import Header from "gatsby-theme-blog/src/components/header"
+import Layout from "gatsby-theme-blog/src/components/layout"
+import SEO from "gatsby-theme-blog/src/components/seo"
+import Footer from "gatsby-theme-blog/src/components/home-footer"
+import PostList from "gatsby-theme-blog/src/components/post-list"
 
-export default function Tags(props) {
-  return (
-    <div style={{ color: `teal` }}>
-      <Header {...props} />
+const Tag = ({ location, data, pageContext }) => (
+  <Layout location={location} title={data.site.siteMetadata.title}>
+    <SEO title={pageContext.tag + " - tag pages"} />
+    <main>
       <h1>
-        {props.pageContext.tag} ({props.data.allBlogPost.totalCount} posts)
+        {pageContext.tag} tag (total {data.allBlogPost.totalCount} pages)
       </h1>
-      <p>Such wow. Very React.</p>
-      <pre>{JSON.stringify(props, null, 2)}</pre>
-    </div>
-  )
-}
+      <p>こんにちは</p>
+      <PostList posts={data.allBlogPost.edges} />
+    </main>
+    <Footer socialLinks={data.site.siteMetadata.social} />
+  </Layout>
+)
+
+export default Tag
+

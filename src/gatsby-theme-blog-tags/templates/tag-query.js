@@ -21,5 +21,14 @@ export const query = graphql`
       }
       totalCount
     }
+    site {
+      siteMetadata {
+        title
+        social {
+          name
+          url
+        }
+      }
+    }
   }
 `
